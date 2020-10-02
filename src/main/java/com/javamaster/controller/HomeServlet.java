@@ -18,7 +18,7 @@ public class HomeServlet extends HttpServlet {
         String path = request.getServletPath();
         if (path.equals("/")) {
             response.setContentType("application/xml");
-            response.getWriter().println("<Response>Hola</Response>");
+            response.getWriter().println("<Response>Hola Servlet</Response>");
         }
         if (path.equals("/1")) {
             response.sendRedirect("http://cloud.zang.io/data/inboundxml/3ce76e1a353a539f25a99a8ebf0f98db8ec6e83f");
