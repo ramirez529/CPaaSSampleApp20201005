@@ -19,7 +19,7 @@ public class HomeServlet extends HttpServlet {
         if (path.equals("/")) {
             response.setContentType("application/xml");
             response.getWriter().println("<Response>Hola</Response>");
-        }"
+        }
 //        if (path.equals("/hello")) {
 //            request.response.sendRedirect("login.jsp");("/WEB-INF/view/hello.xml");
 //        }
