@@ -20,8 +20,11 @@ public class HomeServlet extends HttpServlet {
             response.setContentType("application/xml");
             response.getWriter().println("<Response>Hola</Response>");
         }
-        if (path.equals("/hello")) {
-            response.sendRedirect("/WEB-INF/view/hello.xml");
+        if (path.equals("/1")) {
+            response.sendRedirect("http://cloud.zang.io/data/inboundxml/3ce76e1a353a539f25a99a8ebf0f98db8ec6e83f");
+        }
+        if (path.equals("/2")) {
+            response.sendRedirect("http://cloud.zang.io/data/inboundxml/70bea44d2df496e06566e4122637d430d1a73011");
         }
     }
 
