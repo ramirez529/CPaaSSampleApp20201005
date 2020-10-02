@@ -21,28 +21,14 @@ public class HomeServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private ArticleDao articleDao = new ArticleDaoImpl();
-
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public HomeServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-    /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-     * response)
-     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String path = request.getServletPath();
         if (path.equals("/")) {
             response.getWriter().println("<Resources>Hola</Resources>");
         }
-        if (path.equals("/hello")) {
-            request.response.sendRedirect("login.jsp");("/WEB-INF/view/hello.xml");
-        }
+//        if (path.equals("/hello")) {
+//            request.response.sendRedirect("login.jsp");("/WEB-INF/view/hello.xml");
+//        }
     }
 
     /**
