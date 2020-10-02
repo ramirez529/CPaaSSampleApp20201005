@@ -21,7 +21,7 @@ public class HomeServlet extends HttpServlet {
             response.getWriter().println("<Response>Hola</Response>");
         }
         if (path.equals("/hello")) {
-            request.response.sendRedirect("/WEB-INF/view/hello.xml");
+            response.sendRedirect("/WEB-INF/view/hello.xml");
         }
     }
 
