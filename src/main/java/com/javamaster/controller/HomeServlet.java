@@ -17,8 +17,9 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String path = request.getServletPath();
         if (path.equals("/")) {
-            response.getWriter().println("Hey");
-        }
+            response.setContentType("application/xml");
+            response.getWriter().println("<Response>Hola</Response>");
+        }"
 //        if (path.equals("/hello")) {
 //            request.response.sendRedirect("login.jsp");("/WEB-INF/view/hello.xml");
 //        }
