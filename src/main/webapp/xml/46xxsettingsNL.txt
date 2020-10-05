@@ -1,0 +1,14 @@
+SET SHOW_EQUINOX_MEETING_PANEL_IN_TOM 1
+SET ENABLE_CUSTOM_TOM_PANEL 1
+SET CUSTOM_TOM_PANEL_URI http://68.183.215.34/TOM1/mypanel/panelNL.json
+SET SIPPROXYSRVR sm-196.collaboratory.avaya.com
+SET SIPPORT 5061
+SET SIPDOMAIN collaboratory.avaya.com
+SET SIPUSERNAME 2000010
+SET AGENT_ENABLED 1
+SET AGENT_LOGIN_ID 2900001
+SET AGENT_PASSWORD 123456
+SET AGENT_AVAILABILITY_AUTO 0
+SET LOGOUT_REASON_CODES "0:Manual Logout,1:End Of Day,2:Out Of Office,3:Vacation"
+SET AGENT_WORK_CODE "0:Offer Sent,1:Follow up with Call back,2:Offer Document preparation,3:Discuss Discount"
+SET AUX_REASON_CODES "0:General Break,1:Coffee Break,2:Tea Break,3:Snack Break,4:Lunch code,5:Meeting"
